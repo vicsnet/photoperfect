@@ -31,7 +31,7 @@ const Privacy = () => {
             </ul>
           </div>
           <div
-            className="rounded-2xl z-30 relative "
+            className="rounded-2xl z-[1] relative "
             style={{ background: "rgba(255, 255, 255, 1)" }}
           >
             <div className="w-[90%] mx-auto   ">
@@ -94,7 +94,11 @@ const Privacy = () => {
           </div>
         </div>
         <div className="flex justify-start">
-          <img src={bg2} alt="" className="absolute w-[200px] mt-[-300px] md:w-[300px] md:mt-[-450px]" />
+          <img
+            src={bg2}
+            alt=""
+            className="absolute w-[200px] mt-[-300px] md:w-[300px] md:mt-[-450px]"
+          />
         </div>
       </div>
     </div>

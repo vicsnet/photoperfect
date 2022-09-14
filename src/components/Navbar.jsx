@@ -16,7 +16,7 @@ const Navbar = () => {
     // setIsActive(true);
   };
   return (
-    <div className="relative ">
+    <div className="relative z-10">
       <div className=" w-[90%] mx-auto  flex justify-between ">
         <div>
           <img
@@ -101,12 +101,14 @@ const Navbar = () => {
                   </ul>
                   <ul className="">
                     <li className="text-[16px] leading-6 mt-[30px] mb-[12px]">
-                      Privacy Policy
+                      <Link to="/privacy">Privacy Policy</Link>
                     </li>
                     <li className="text-[16px] leading-6 mb-[12px]">
-                      Terms Of Use
+                      <Link to="terms">Terms Of Use</Link>
                     </li>
-                    <li className="text-[16px] leading-6 pb-[100px]">FAQs</li>
+                    <li className="text-[16px] leading-6 pb-[100px]">
+                      <Link to="faq">FAQs</Link>
+                    </li>
                   </ul>
                 </div>
               </div>
