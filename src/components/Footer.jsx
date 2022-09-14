@@ -3,13 +3,16 @@ import Logo from "../images/Photo perfects  4.png";
 import icon1 from "../images/Icon.png";
 import icon2 from "../images/Icon2.png";
 import icon3 from "../images/Icon3.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="mt-[68px]">
+    <div className="pt-[68px] bg-[#D9D9D9] ">
       <div className=" w-[90%] mx-auto flex flex-col  xs:flex-row sm:flex-row lg:flex-row justify-between ">
         <div className="">
-          <img src={Logo} alt="" className="w-[230px] mb-1" />
+          <Link to="/">
+            <img src={Logo} alt="" className="w-[230px] mb-1" />
+          </Link>
           <p
             className="text-[14px] font-light leading-[24px] tracking-[0.3px] w-[55%] ml-[75px] "
             style={{ color: "rgba(51, 51, 51, 1)" }}
@@ -28,9 +31,15 @@ const Footer = () => {
           style={{ color: "rgba(51, 51, 51, 1)" }}
         >
           <ul className="flex flex-col lg:flex-row xs:pt-4 sm:pt-4 md:pt-4 gap-[14px] lg:gap-[37px] lg:items-center pt-[30px] lg:pt-[40px] ">
-            <li className="w-auto h-auto lg:items-center ">Privacy Policy</li>
-            <li className="w-auto h-auto lg:items-center ">Terms Of Use</li>
-            <li className="w-auto h-auto lg:items-center ">FAQs</li>
+            <li className="w-auto h-auto lg:items-center ">
+              <Link to="/privacy">Privacy Policy</Link>
+            </li>
+            <li className="w-auto h-auto lg:items-center ">
+              <Link to="/terms">Terms Of Use</Link>
+            </li>
+            <li className="w-auto h-auto lg:items-center ">
+              <Link to="/faq">FAQs</Link>
+            </li>
           </ul>
         </div>
         <div className="flex gap-[52px] xs:gap-6 sm:gap-6 xs:pt-4 sm:pt-4 xs:flex-col sm:flex-col md:flex-row items-center pt-[30px]">
