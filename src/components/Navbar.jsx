@@ -5,6 +5,7 @@ import NavClose from "../images/multiply.png";
 import Frame from "../images/frame.png";
 import Gift from "../images/Group (7).png";
 import Track from "../images/Group (8).png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -67,16 +68,18 @@ const Navbar = () => {
                       borderColor: "rgba(224, 224, 224, 1)",
                     }}
                   >
-                    <li className="flex gap-2 h-[18px] mb-[29px] ">
-                      <img
-                        src={Frame}
-                        alt="frame icon"
-                        className="w-[22px] h-[17.29px]"
-                      />{" "}
-                      <p className="text-16px items-center flex">
-                        Frame your photo
-                      </p>
-                    </li>
+                    <Link to="/details">
+                      <li className="flex gap-2 h-[18px] mb-[29px] ">
+                        <img
+                          src={Frame}
+                          alt="frame icon"
+                          className="w-[22px] h-[17.29px]"
+                        />{" "}
+                        <p className="text-16px items-center flex">
+                          Frame your photo
+                        </p>
+                      </li>
+                    </Link>
                     <li className="flex gap-2 h-[18px] mb-[29px]">
                       <img
                         src={Gift}
@@ -88,16 +91,18 @@ const Navbar = () => {
                         Gift a frame
                       </p>
                     </li>
+                      <Link to="/trackorder">
                     <li className="flex gap-2 h-[22px] mb-[29px] ">
-                      <img
-                        src={Track}
-                        alt="frame icon"
-                        className="w-[22px] h-[22px]"
-                      />
-                      <p className="text-[16px] items-center flex">
-                        Track Order
-                      </p>
+                        <img
+                          src={Track}
+                          alt="frame icon"
+                          className="w-[22px] h-[22px]"
+                        />
+                        <p className="text-[16px] items-center flex">
+                          Track Order
+                        </p>
                     </li>
+                      </Link>
                   </ul>
                   <ul className="">
                     <li className="text-[16px] leading-6 mt-[30px] mb-[12px]">

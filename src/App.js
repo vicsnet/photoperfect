@@ -6,6 +6,10 @@ import Privacy from "./pages/Privacy";
 import Footer from "./components/Footer";
 import Terms from "./pages/Terms";
 import Faq from "./pages/Faq";
+import TrackOrder from "./components/TrackOrder";
+import Details from "./components/Details";
+import Who from "./components/Who";
+import SomeElse from "./components/SomeElse";
 
 function App() {
   return (
@@ -15,9 +19,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/FAQ" element={<Faq />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/trackorder" element={<TrackOrder />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/who" element={<Who />} />
+        <Route path="/someelse" element={<SomeElse />} />
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

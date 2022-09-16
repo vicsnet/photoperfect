@@ -4,6 +4,7 @@ import bgi from "../images/Component 2 (1).png";
 import bg2 from "../images/Component 3 (3).png";
 import icon from "../images/angle-right.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Terms = () => {
   return (
@@ -97,10 +98,11 @@ const Terms = () => {
           <img
             src={bg2}
             alt=""
-            className="absolute w-[200px] mt-[-300px] md:w-[300px] md:mt-[-450px]"
+            className="absolute w-[200px] mt-[-300px] md:w-[300px] md:mt-[-450px] bg-[#D9D9D9]"
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
