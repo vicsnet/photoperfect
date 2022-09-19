@@ -1,28 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import bgi from "../images/Component 2 (1).png";
 import bg2 from "../images/Component 3 (3).png";
 import icon from "../images/angle-right.png";
-import openIcon from "../images/Group 35539.png";
-import closeIcon from "../images/Group 35538.png";
 import { Link } from "react-router-dom";
-import { faq } from "../faq";
+import Accordion from "./Accordion";
 import Footer from "../components/Footer";
+import { faq } from "../faq";
 
 const Faq = () => {
-  const [open, setOpen] = useState(false);
-  const [faqInfo, setFaqInfo] = React.useState(faq);
-
-  // setFaqInfo(faq)
-
-
-
-  
-
-  const handleClick = () => {
-    setOpen(!open);
-    setFaqInfo(faq)
-  };
   return (
     <div className="bg-[#D9D9D9]">
       <div>
@@ -58,70 +44,10 @@ const Faq = () => {
               >
                 Frequently Asked Questions
               </h3>
-
               {/* faq mapping */}
-              {faqInfo.map((info) => {
-                const { title, details, id } = info;
-                return (
-                  <div className=" pb-[29px]">
-                    <div
-                      className={
-                        !open
-                          ? "rounded-[16px] border-[1px] shadow-lg"
-                          : " border-[2px] border-[#A560FE] rounded-[16px]"
-                      }
-                      // style={
-                      //   !open && {
-                      //     boxhadow: "0px 5px 16px 0px rgba(8, 15, 52, 0.06)",
-                      //     border: "1px solid-rgba(8, 15, 52, 0.06)",
-                      //   }
-                      // }
-                    >
-                      <div className="w-[90%] mx-auto ">
-                        <div
-                          className="flex justify-between pt-[15px] pb-[15px]"
-                          key={id}
-                        >
-                          <p
-                            className="flex  text-[16px] items-center md:text-[22px] font-medium"
-                            style={{ color: "rgba(51, 51, 51, 1)" }}
-                          >
-                            {title}
-                          </p>
-
-                          <span>
-                            {!open ? (
-                              <img
-                                src={openIcon}
-                                alt=""
-                                className="flex items-center w-[60px] md:w-[40px] cursor-pointer"
-                                onClick={handleClick}
-                                key={id}
-                              />
-                            ) : (
-                              <img
-                                src={closeIcon}
-                                alt=""
-                                className="flex items-center justify-center mx-auto w-[40px] cursor-pointer"
-                                onClick={handleClick}
-                              />
-                            )}
-                          </span>
-                        </div>
-                        <p
-                          className={
-                            !open
-                              ? "hidden"
-                              : " flex pt-[17px] text-[14px] md:text-[18px] leading-[30px] w-[92%] font-normal pb-[47.26px]"
-                          }
-                        >
-                          {details}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+              {faq.map(({ title, details, id }) => (
+                <Accordion title={title} id={id} details={details} key={id} />
+              ))}
             </div>
           </div>
         </div>
