@@ -10,6 +10,8 @@ import TrackOrder from "./components/TrackOrder";
 import Details from "./components/Details";
 import Who from "./components/Who";
 import SomeElse from "./components/SomeElse";
+import ImageUpload from "./pages/ImageUpload";
+import CheckOut from "./pages/CheckOut";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/who" element={<Who />} />
         <Route path="/someelse" element={<SomeElse />} />
+        <Route path="/imageupload" element={<ImageUpload />} />
+        <Route path="/checkout" element={<CheckOut />} />
       </Routes>
       {/* <Footer/> */}
     </>
