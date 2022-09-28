@@ -5,13 +5,13 @@ import Navbar from "./Navbar";
 
 const SomeElse = () => {
   return (
-    <div className="bg-[#D9D9D9] mb-0 ">
+    <div className="back mb-0 ">
       <Navbar />
-      <div className="flex justify-end bg-[#D9D9D9]">
+      <div className="flex justify-end">
         <img
           src={bgi}
           alt=""
-          className="absolute w-[190px] lg:w-[400px] mt-[-100px] bg-[#D9D9D9]"
+          className="absolute w-[190px] lg:w-[400px] mt-[-100px]"
         />
       </div>
       <div className="relative w-[90%] mx-auto">
@@ -53,13 +53,13 @@ const SomeElse = () => {
         </div>
       </div>
 
-      <div className="bg-[#D9D9D9]">
+      <div className="">
         <img
           src={bg2}
           alt=""
-          className="absolute w-[190px] md:w-[280px] lg:w-[280px] bg-[#D9D9D9]"
+          className="absolute w-[190px] md:w-[280px] lg:w-[280px] "
         />
-        <div className="bg-[#D9D9D9] h-[150px] md:h-[220px]"></div>{" "}
+        <div className="h-[150px] md:h-[220px]"></div>{" "}
       </div>
     </div>
 

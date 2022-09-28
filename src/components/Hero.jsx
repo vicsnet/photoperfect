@@ -23,7 +23,7 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <div
-      className=""
+      className="back"
       //   className={!col ? "bg-[black]" : "bg-[#F9F8FB]"}
       style={{
         backgroundColor: "rgba(249, 248, 251, 1)",
@@ -67,7 +67,7 @@ const Hero = () => {
             />
           </div>
           <div className="mt-auto">
-            <p className="text-[10px] xs:text-[12px] sm:text-[15px] z-30 relative leading-4 sm:leading-5 lg:text-24px md:leading-9 md:w-[79%] lg:w-[80%] xl:w-[60%] font-medium">
+            <p className="text-[10px] xs:text-[12px] sm:text-[15px] z-[1] relative leading-4 sm:leading-5 lg:text-24px md:leading-9 md:w-[79%] lg:w-[80%] xl:w-[60%] font-medium">
               Your walls hold a lot of potentials. Spice things up with magical
               frames today!
             </p>
@@ -154,7 +154,7 @@ const Hero = () => {
             className="absolute w-[320.08px] object-cover"
           />
         </div>
-        <div className="pt-[207px] relative z-10">
+        <div className="pt-[207px] relative z-[1]">
           <h1
             className="pb-[31px] md:pb-0 text-center text-[24px] md:text-[36px] tracking-[1px] font-bold"
             style={{ color: "rgba(29, 2, 63, 1)" }}
@@ -277,14 +277,14 @@ const Hero = () => {
 
           {/* to be fetched from database */}
           <div className="w-[90%] mx-auto mt-[60px] flex flex-col md:flex-row justify-between gap-4">
-            <div className="">
+            <div className="card w-[90%] mx-auto xs:w-[60%] xs:mx-auto sm:w-[60%] sm:mx-auto md:w-[30%] pb-[18px]">
               <img
                 src={lara}
                 alt=""
-                className="w-[284px] h-[278px] mx-auto sm:w-[384px] sm:h-[385px] object-cover md:w-[284px] md:h-[278px] lg:w-[384px] lg:h-[385px]"
+                className="w-[100%] h-[278px] xs:w-[100%] xs:h-[278px] mx-auto sm:w-[100%] sm:h-[385px] object-cover md:w-[284px] md:h-[278px] lg:w-[384px] lg:h-[385px]"
               />
               <p
-                className="text-[16px] text-center w-[90%] xs:w-[70%] sm:w-[60%] font-light tracking-[1px] leading-[23.2px] md:w-[70%] mx-auto mt-[18px] md:text-left"
+                className="text-[16px] text-center w-[90%] xs:w-[90%] sm:w-[80%] font-light tracking-[1px] leading-[23.2px] md:w-[70%] mx-auto mt-[18px] md:text-left"
                 style={{ color: "rgba(102, 102, 102, 1)" }}
               >
                 Photo Perfects is literally the best way to print and frame
@@ -297,14 +297,14 @@ const Hero = () => {
                 Lara Johnson
               </h4>
             </div>
-            <div className="">
+            <div className="card w-[90%] mx-auto xs:w-[60%] xs:mx-auto sm:w-[60%] sm:mx-auto md:w-[30%] pb-[18px]">
               <img
                 src={lara}
                 alt=""
-                className="w-[284px] h-[278px] mx-auto sm:w-[384px] sm:h-[385px] object-cover md:w-[284px] md:h-[278px] lg:w-[384px] lg:h-[385px]"
+                className="w-[100%] h-[278px] xs:w-[100%] xs:h-[278px] mx-auto sm:w-[100%] sm:h-[385px] object-cover md:w-[284px] md:h-[278px] lg:w-[384px] lg:h-[385px]"
               />
               <p
-                className="text-[16px] text-center w-[90%] xs:w-[70%] sm:w-[60%] font-light tracking-[1px] leading-[23.2px] md:w-[70%] mx-auto mt-[18px] md:text-left"
+                className="text-[16px] text-center w-[90%] xs:w-[90%] sm:w-[80%] font-light tracking-[1px] leading-[23.2px] md:w-[70%] mx-auto mt-[18px] md:text-left"
                 style={{ color: "rgba(102, 102, 102, 1)" }}
               >
                 Photo Perfects is literally the best way to print and frame
@@ -317,14 +317,14 @@ const Hero = () => {
                 Lara Johnson
               </h4>
             </div>
-            <div className="">
+            <div className="card w-[90%] mx-auto xs:w-[60%] xs:mx-auto sm:w-[60%] sm:mx-auto md:w-[30%] pb-[18px]">
               <img
                 src={lara}
                 alt=""
-                className="w-[284px] h-[278px] mx-auto sm:w-[384px] sm:h-[385px] object-cover md:w-[284px] md:h-[278px] lg:w-[384px] lg:h-[385px]"
+                className="w-[100%] h-[278px] xs:w-[100%] xs:h-[278px] mx-auto sm:w-[100%] sm:h-[385px] object-cover md:w-[284px] md:h-[278px] lg:w-[384px] lg:h-[385px]"
               />
               <p
-                className="text-[16px] text-center w-[90%] xs:w-[70%] sm:w-[60%] font-light tracking-[1px] leading-[23.2px] md:w-[70%] mx-auto mt-[18px] md:text-left"
+                className="text-[16px] text-center w-[90%] xs:w-[90%] sm:w-[80%] font-light tracking-[1px] leading-[23.2px] md:w-[70%] mx-auto mt-[18px] md:text-left"
                 style={{ color: "rgba(102, 102, 102, 1)" }}
               >
                 Photo Perfects is literally the best way to print and frame
@@ -337,6 +337,7 @@ const Hero = () => {
                 Lara Johnson
               </h4>
             </div>
+           
           </div>
         </div>
       </div>
@@ -353,52 +354,52 @@ const Hero = () => {
           <img
             src={larainsta}
             alt=""
-            className=" w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className=" w-[48%]  sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta2}
             alt=""
-            className=" w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className=" w-[48%]  sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta3}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta4}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill"
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill"
           />
           <img
             src={larainsta5}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta6}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta7}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta8}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta9}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill "
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
           <img
             src={larainsta5}
             alt=""
-            className="w-[120px] h-[120px] xs:w-[157px] xs:h-[157px] sm:w-[226px] sm:h-[228px] object-fill"
+            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill"
           />
         </div>
       </div>

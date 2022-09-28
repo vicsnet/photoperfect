@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="pt-[68px] bg-[#D9D9D9] ">
+    <div className="pt-[68px]">
       <div className=" w-[90%] mx-auto flex flex-col  xs:flex-row sm:flex-row lg:flex-row justify-between ">
         <div className="">
           <Link to="/">

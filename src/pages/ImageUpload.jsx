@@ -40,7 +40,7 @@ const handleDelete = (detail) => {
     <div className="">
       <Navbar />
 
-      <div className="bg-[#D9D9D9] pb-[25.5px] ">
+      <div className="back pb-[25.5px] ">
         <div className="w-[90%] mx-auto relative ">
           <div
             className="text-[12px] leading-[14.52px] font-light mt-[30.5px] pt-[30px] mb-[25.5px] flex justify-between"
@@ -89,11 +89,12 @@ const handleDelete = (detail) => {
                 Uplaod minimum of 4 pictures
               </p>
 
-              <div className="flex  flex-wrap gap-2 md:gap-[10px] xl:gap-[30px] px-auto mx-auto xl:w-[90%] items-center justify-center">
+              <div className="flex  flex-wrap justify-center gap-[10%] xl:gap-[10%] ">
                 {getData?.map((detail) => {
                   const { id, whiteBorder, image } = detail;
                   return (
-                    <div key={id}>
+                    <div key={id} >
+
                       <div
                         className={
                           !whiteBorder
@@ -116,15 +117,19 @@ const handleDelete = (detail) => {
                           />
                         </button>
                       </div>
-                    </div>
+                      </div>
+                    
                   );
                 })}
+                <div className="w-30%">
+                  
                 <img
                   src={frame}
                   alt=""
-                  className="w-[295px] h-[295px] "
+                  className="w-[100%] h-[295px] "
                   onClick={() => setOpenModal(true)}
-                />
+                  />
+                  </div>
               </div>
               <div className=" sm:hidden">
                 <button className="text-[16px] font-bold text-[#FFFFFF] leading-[19.36px] bg-[#A560FE] w-[100%] py-[15.5px] rounded-[6px]">

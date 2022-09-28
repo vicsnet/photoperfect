@@ -67,7 +67,7 @@ const Modal = ({ open, onClose, onGetData }) => {
   if (!open) return null;
 
   return (
-    <div className="w-[100%] h-screen modal top-0 absolute z-10">
+    <div className="w-[100%] h-[100%] modal top-0 fixed z-10">
       <div className="w-[92%] sm:w-[70%] md:w-[70%] lg:w-[65%] xl:w-[50%] mx-auto pt-[5%]  ">
         <div className="bg-[#F6F4F8] rounded-[16px]">
           <div className="w-[90%] mx-auto">
@@ -88,7 +88,6 @@ const Modal = ({ open, onClose, onGetData }) => {
                   id="selectFile"
                   name="image"
                   accept="image/*"
-                  capture
                   style={{ display: "none" }}
                   onChange={handleChange}
                 />

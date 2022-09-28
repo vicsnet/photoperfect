@@ -17,7 +17,7 @@ const Navbar = () => {
     // setIsActive(true);
   };
   return (
-    <div className="relative z-10">
+    <div className={!nav? "relative z-10" : 'fixed top-0 w-[100%] h-[100%] modal z-20'}>
       <div className=" w-[90%] mx-auto  flex justify-between ">
         <div>
           <img
@@ -80,7 +80,7 @@ const Navbar = () => {
                         </p>
                       </li>
                     </Link>
-                    <li className="flex gap-2 h-[18px] mb-[29px]">
+                    <li className="flex gap-2 h-[18px] mb-[29px] cursor-pointer">
                       <img
                         src={Gift}
                         alt="frame icon"
@@ -109,10 +109,10 @@ const Navbar = () => {
                       <Link to="/privacy">Privacy Policy</Link>
                     </li>
                     <li className="text-[16px] leading-6 mb-[12px]">
-                      <Link to="terms">Terms Of Use</Link>
+                      <Link to="/terms">Terms Of Use</Link>
                     </li>
                     <li className="text-[16px] leading-6 pb-[100px]">
-                      <Link to="faq">FAQs</Link>
+                      <Link to="/faq">FAQs</Link>
                     </li>
                   </ul>
                 </div>
