@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import bgi from "../images/Component 2 (1).png";
@@ -8,7 +9,7 @@ import { Link } from "react-router-dom";
 import Modal from "../components/Modal";
 import But from "../images/Button.png";
 
-const ImageUpload = () => {
+const Hello = () => {
   const [openModal, setOpenModal] = useState(false);
   const [getData, setGetData] = useState([])
   
@@ -40,7 +41,7 @@ const handleDelete = (detail) => {
     <div className="">
       <Navbar />
 
-      <div className="back pb-[25.5px] ">
+      <div className="bg-[#D9D9D9] pb-[25.5px] ">
         <div className="w-[90%] mx-auto relative ">
           <div
             className="text-[12px] leading-[14.52px] font-light mt-[30.5px] pt-[30px] mb-[25.5px] flex justify-between"
@@ -89,7 +90,7 @@ const handleDelete = (detail) => {
                 Uplaod minimum of 4 pictures
               </p>
 
-              <div className="flex flex-wrap gap-[5%]">
+              <div className="flex  flex-wrap gap-2 md:gap-[10px] xl:gap-[30px] px-auto mx-auto xl:w-[90%] items-center justify-center">
                 {getData?.map((detail) => {
                   const { id, whiteBorder, image } = detail;
                   return (
@@ -103,7 +104,7 @@ const handleDelete = (detail) => {
                       >
                         <img
                           src={image}
-                          className="w-[100%] h-[100%] object-cover relative flex items-center justify-center mx-auto"
+                          className="w-[240px] h-[240px] object-cover relative flex items-center justify-center mx-auto"
                         />
                         <button
                           className=" top-[750px] right-[140px]"
@@ -119,24 +120,15 @@ const handleDelete = (detail) => {
                     </div>
                   );
                 })}
-                <div className="">
-                  <img
-                    src={frame}
-                    alt=""
-                    className="w-[280px] h-[280px] "
-                    onClick={() => setOpenModal(true)}
-                  />
-                </div>
+                <img
+                  src={frame}
+                  alt=""
+                  className="w-[295px] h-[295px] "
+                  onClick={() => setOpenModal(true)}
+                />
               </div>
               <div className=" sm:hidden">
-                <button
-                  disabled={getData.length < 4}
-                  className={
-                    getData.length < 4
-                      ? "text-[16px] font-bold text-[#FFFFFF] leading-[19.36px] bg-[#BAB8B8] w-[100%] py-[15.5px] rounded-[6px]"
-                      : "text-[16px] font-bold text-[#FFFFFF] leading-[19.36px] bg-[#A560FE] w-[100%] py-[15.5px] rounded-[6px]"
-                  }
-                >
+                <button className="text-[16px] font-bold text-[#FFFFFF] leading-[19.36px] bg-[#A560FE] w-[100%] py-[15.5px] rounded-[6px]">
                   Checkout
                 </button>
               </div>
@@ -153,4 +145,4 @@ const handleDelete = (detail) => {
   );
 };
 
-export default ImageUpload;
+export default Hello;

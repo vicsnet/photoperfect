@@ -163,8 +163,8 @@ useEffect(() => {
                         </p>
                       </span>
                     </div>
-                    <div className="mt-[35.5px] flex flex-col sm:flex-row gap-2 sm:justify-end">
-                      <button className="text-[14px] font-bold text-[#A560FE] py-[16.5px] px-[56.1px] md:px-[30px] lg:px-[56.1px] border-[1px] border-[#A560FE] rounded-[6px]">
+                    <div className="mt-[35.5px] flex flex-col sm:flex-row gap-8 sm:gap-2 sm:justify-end">
+                      <button className="text-[16px] font-bold text-[#A560FE] py-[16.5px] px-[56.1px] md:px-[30px] lg:px-[40px] xl:px-[56.1px] border-[1px] border-[#A560FE] rounded-[6px]">
                         Cancle order
                       </button>
                       <button
@@ -174,7 +174,7 @@ useEffect(() => {
                             setPage((currPage) => currPage + 1);
                           }
                         }}
-                        className="text-[14px] font-bold text-[#FFFFFF] py-[16.5px] lg:px-[56.1px] md:px-[30px] px-[56.1px] border-[1px] bg-[#A560FE] rounded-[6px]"
+                        className="text-[16px] font-bold text-[#FFFFFF] py-[16.5px] lg:px-[40px] xl:px-[56.1px] md:px-[30px] px-[56.1px] border-[1px] bg-[#A560FE] rounded-[6px]"
                       >
                         {page === 1 ? "Checkout" : "Payment"}
                       </button>
