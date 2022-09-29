@@ -25,7 +25,7 @@ function App() {
         <Route path="/trackorder" element={<TrackOrder />} />
         <Route path="/details" element={<Details />} />
         <Route path="/who" element={<Who />} />
-        <Route path="/someelse" element={<SomeElse />} />
+        <Route path="/someoneelse" element={<SomeElse />} />
         <Route path="/imageupload" element={<ImageUpload />} />
         <Route path="/checkout" element={<CheckOut />} />
       </Routes>

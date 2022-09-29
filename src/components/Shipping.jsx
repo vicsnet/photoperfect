@@ -26,7 +26,7 @@ const Shipping = () => {
           />{" "}
         </div>
         <br />
-        <div className="mt-[30px]">
+        <div className="mt-[0px]">
           <label htmlFor="" className="text-[16px] text-[#718096] ">
             Address
           </label>

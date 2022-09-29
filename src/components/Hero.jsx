@@ -18,12 +18,12 @@ import larainsta6 from "../images/Rectangle 252.png";
 import larainsta7 from "../images/Rectangle 253.png";
 import larainsta8 from "../images/Rectangle 254.png";
 import larainsta9 from "../images/Rectangle 255.png";
+import insta from "../images/instagram.png";
 import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
     <div
-      className="back"
       //   className={!col ? "bg-[black]" : "bg-[#F9F8FB]"}
       style={{
         backgroundColor: "rgba(249, 248, 251, 1)",
@@ -37,7 +37,9 @@ const Hero = () => {
           className="absolute ml-auto w-[200px] md:w-[300px] xl:w-[360.48px]"
         />
       </div>
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
       <div className="w-[90%] mx-auto ">
         <div className="flex justify-between relative">
           <div className=" my-auto w-[490px] mx-auto flex flex-col justify-end">
@@ -337,7 +339,6 @@ const Hero = () => {
                 Lara Johnson
               </h4>
             </div>
-           
           </div>
         </div>
       </div>
@@ -396,11 +397,19 @@ const Hero = () => {
             alt=""
             className="w-[48%] sm:w-[30%] md:w-[18%] object-fill "
           />
-          <img
-            src={larainsta5}
-            alt=""
-            className="w-[48%] sm:w-[30%] md:w-[18%] object-fill"
-          />
+          <div className="w-[48%] sm:w-[30%] md:w-[18%] relative ">
+            <img src={larainsta5} alt="" className=" object-fill relative" />
+            <div
+              className="absolute top-0 w-[100%] h-[100%]"
+              style={{ background: "rgba(0, 0, 0, 0.6)" }}
+            >
+              <img
+                src={insta}
+                alt=""
+                className="mt-[40%] ml-[40%] w-[41.67px] h-[41.67px] "
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

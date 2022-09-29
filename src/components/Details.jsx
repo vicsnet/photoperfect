@@ -5,11 +5,11 @@ import bg2 from "../images/Rectangle 7.png";
 import Group from "../images/Group (9).png";
 import Group2 from "../images/Group (10).png";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Details = () => {
   return (
     <div className="back mb-0 ">
-      
       <Navbar />
       <div className="flex justify-end ">
         <img
@@ -26,6 +26,8 @@ const Details = () => {
           Who's it for?
         </h3>
         <div className=" mx-auto gap-[30px] md:gap-[72px] justify-center flex flex-col sm:flex-row relative items-center z-[1] ">
+          <Link to='/who'>
+          
           <div
             className=" px-[55px] md:px-[67px] py-[49px] rounded-[16px] shadow-xl hover:shadow-2xl cursor-pointer "
             style={{
@@ -37,17 +39,20 @@ const Details = () => {
               For my self
             </h2>
           </div>
-          <div
-            className="px-[55px] md:px-[67px] py-[35px] rounded-[16px] shadow-xl hover:shadow-2xl cursor-pointer"
-            style={{
-              background: "rgba(255, 255, 255, 1)",
-            }}
-          >
-            <img src={Group2} alt="" className="w-[191.12px]" />
-            <h2 className="pb-[20px] text-20px font-semibold tracking-[1px] leading-[29px] text-center pt-[10px] md:pb-[40px]">
-              For someone else
-            </h2>
-          </div>
+          </Link>
+          <Link to="/someoneelse">
+            <div
+              className="px-[55px] md:px-[67px] py-[35px] rounded-[16px] shadow-xl hover:shadow-2xl cursor-pointer"
+              style={{
+                background: "rgba(255, 255, 255, 1)",
+              }}
+            >
+              <img src={Group2} alt="" className="w-[191.12px]" />
+              <h2 className="pb-[20px] text-20px font-semibold tracking-[1px] leading-[29px] text-center pt-[10px] md:pb-[40px]">
+                For someone else
+              </h2>
+            </div>
+          </Link>
         </div>
       </div>
 

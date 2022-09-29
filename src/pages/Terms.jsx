@@ -98,7 +98,7 @@ const Terms = () => {
           <img
             src={bg2}
             alt=""
-            className="absolute w-[200px] mt-[-300px] md:w-[300px] md:mt-[-450px] bg-[#D9D9D9]"
+            className="absolute w-[200px] mt-[-300px] md:w-[300px] md:mt-[-450px] "
           />
         </div>
       </div>
