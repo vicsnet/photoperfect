@@ -88,6 +88,8 @@ const Navbar = () => {
                           </p>
                         </li>
                       </Link>
+                     <Link to='someoneelse'>
+
                       <li className="flex gap-2 h-[18px] mb-[29px] cursor-pointer">
                         <img
                           src={Gift}
@@ -99,6 +101,7 @@ const Navbar = () => {
                           Gift a frame
                         </p>
                       </li>
+                     </Link>
                       <Link to="/trackorder">
                         <li className="flex gap-2 h-[22px] mb-[29px] ">
                           <img
