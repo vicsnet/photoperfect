@@ -9,21 +9,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [isActive, setIsActive] = useState(false);
 
   const handlenav = () => {
     setNav(!nav);
-    setIsActive((current) => !current);
+    // setIsActive((current) => !current);
     // setIsActive(true);
   };
   return (
-    <div
-      className="relative z-10"
-      // className={
-      //   !nav ? "relative z-10" : "fixed w-[100%] h-[100%] modal z-20"
-      // }
-    >
-      <div className={!nav ? "" : "relative"}>
+    <div className={!nav ? "relative z-10" : "fixed w-[100%] h-[100%] modal z-20"}>
+      <div className={!nav ? "" : "absolute w-[100%] modal"}>
         <div className=" w-[90%] mx-auto  flex justify-between">
           <div>
             <Link to="/">
@@ -88,20 +82,19 @@ const Navbar = () => {
                           </p>
                         </li>
                       </Link>
-                     <Link to='/someoneelse'>
-
-                      <li className="flex gap-2 h-[18px] mb-[29px] cursor-pointer">
-                        <img
-                          src={Gift}
-                          alt="frame icon"
-                          className="w-[20px] h-[17.04px]"
-                        />{" "}
-                        <p className="text-[16px] items-center flex">
-                          {" "}
-                          Gift a frame
-                        </p>
-                      </li>
-                     </Link>
+                      <Link to="/someoneelse">
+                        <li className="flex gap-2 h-[18px] mb-[29px] cursor-pointer">
+                          <img
+                            src={Gift}
+                            alt="frame icon"
+                            className="w-[20px] h-[17.04px]"
+                          />{" "}
+                          <p className="text-[16px] items-center flex">
+                            {" "}
+                            Gift a frame
+                          </p>
+                        </li>
+                      </Link>
                       <Link to="/trackorder">
                         <li className="flex gap-2 h-[22px] mb-[29px] ">
                           <img
