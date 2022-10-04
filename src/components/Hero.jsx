@@ -38,7 +38,7 @@ const Hero = () => {
         />
       </div>
       <Navbar />
-      <div className="w-[90%] mx-auto ">
+      <div className="w-[90%] mx-auto mobile:mt-[20px]">
         <div className="flex justify-between relative">
           <div className=" my-auto w-[490px] mx-auto flex flex-col justify-end">
             <h1
