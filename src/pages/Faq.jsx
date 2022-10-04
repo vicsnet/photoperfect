@@ -10,7 +10,7 @@ import { faq } from "../faq";
 
 const Faq = () => {
   return (
-    <div className="bg-[#D9D9D9]">
+    <div className="back">
       <div>
         <div className="flex justify-end">
           <img src={bgi} alt="" className="absolute w-[190px] lg:w-[500px]" />
