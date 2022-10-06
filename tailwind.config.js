@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       screens: {
         xs: { min: "475px", max: "640px" },
+        smDesktop: { max: "1024px" }, // small desktop
+        tablet: { max: "768px" },
         mobile: { max: "480px" },
-        // ...defaultTheme.screens,
+        smMobile: { max: "320px" },
       },
     },
   },

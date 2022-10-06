@@ -63,7 +63,7 @@ const Modal = ({ open, onClose, onGetData }) => {
   if (!open) return null;
 
   return (
-    <div className="w-[100%] h-[130%] modal top-0  absolute z-10">
+    <div className="w-[100%] h-[100%] modal top-0  fixed z-10">
       <div
         className="w-[92%] sm:w-[80%] md:w-[75%] lg:w-[65%] xl:w-[50%] mx-auto pt-[5%]"
         style={{ maxHeight: "calc(100vh + 110px)" }}

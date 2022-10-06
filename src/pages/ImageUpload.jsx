@@ -89,7 +89,7 @@ const handleDelete = (detail) => {
                 Uplaod minimum of 4 pictures
               </p>
 
-              <div className={getData.length > 3 ? "flex justify-center flex-wrap" :"flex flex-wrap gap-[5%] w-[90%] mx-auto justify-center lg:justify-start"}>
+              <div className="flex gap-20 flex-wrap px-20 mobile:px-3 mobile:gap-1">
                 {getData?.map((detail) => {
                   const { id, whiteBorder, image } = detail;
                   return (

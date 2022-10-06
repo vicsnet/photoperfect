@@ -24,7 +24,6 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <div
-      //   className={!col ? "bg-[black]" : "bg-[#F9F8FB]"}
       style={{
         backgroundColor: "rgba(249, 248, 251, 1)",
       }}
@@ -37,16 +36,10 @@ const Hero = () => {
           className="absolute ml-auto w-[200px] md:w-[300px] xl:w-[360.48px]"
         />
       </div>
-<<<<<<< HEAD
-      <Navbar />
-      <div className="w-[90%] mx-auto mobile:mt-[20px]">
-=======
       <div>
         <Navbar />
       </div>
-      
-      <div className="w-[90%] mx-auto ">
->>>>>>> refs/remotes/origin/master
+      <div className="w-[90%] mx-auto mobile:pt-[20px]">
         <div className="flex justify-between relative">
           <div className=" my-auto w-[490px] mx-auto flex flex-col justify-end">
             <h1
