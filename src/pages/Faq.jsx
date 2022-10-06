@@ -4,7 +4,7 @@ import bgi from "../images/Component 2 (1).png";
 import bg2 from "../images/Component 3 (3).png";
 import icon from "../images/angle-right.png";
 import { Link } from "react-router-dom";
-import Accordion from "./Accordion";
+import Accordion from "../components/Accordion"
 import Footer from "../components/Footer";
 import { faq } from "../faq";
 

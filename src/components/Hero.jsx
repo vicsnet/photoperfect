@@ -24,7 +24,6 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <div
-      //   className={!col ? "bg-[black]" : "bg-[#F9F8FB]"}
       style={{
         backgroundColor: "rgba(249, 248, 251, 1)",
       }}
@@ -40,8 +39,7 @@ const Hero = () => {
       <div>
         <Navbar />
       </div>
-      
-      <div className="w-[90%] mx-auto ">
+      <div className="w-[90%] mx-auto mobile:pt-[20px]">
         <div className="flex justify-between relative">
           <div className=" my-auto w-[490px] mx-auto flex flex-col justify-end">
             <h1

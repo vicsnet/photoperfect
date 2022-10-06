@@ -12,13 +12,11 @@ const Navbar = () => {
 
   const handlenav = () => {
     setNav(!nav);
-    // setIsActive((current) => !current);
-    // setIsActive(true);
   };
+  
   return (
-    <div className={!nav ? "relative z-10" : "fixed w-[100%] h-[100%] modal z-20"}>
-      <div className={!nav ? "" : "absolute w-[100%] modal"}>
-        <div className=" w-[90%] mx-auto  flex justify-between">
+    <div>
+        <div className="w-[90%] mx-auto flex justify-between">
           <div>
             <Link to="/">
               <img
@@ -28,15 +26,14 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          {/* <div className="md:w-[459px] md:h-[569px]"> */}
-          {!nav && (
-            <img
+          <div>
+            {!nav && <img
               src={Nav}
               alt="Nav Icon"
-              className="w-[20px] h-[14px] mt-12 object-cover justify-end"
+              className="w-[20px] relative h-[14px] mt-12 object-cover justify-end"
               onClick={handlenav}
-            />
-          )}
+            />}
+          </div>
         </div>
         <div>
           <div>
@@ -125,10 +122,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-      </div>
-    </div>
-    // </div>
-  );
+    </div>)
 };
 
 export default Navbar;
