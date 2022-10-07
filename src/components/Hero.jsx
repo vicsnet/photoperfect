@@ -36,7 +36,7 @@ const Hero = () => {
           className="absolute ml-auto w-[200px] md:w-[300px] xl:w-[360.48px]"
         />
       </div>
-      <div>
+      <div className="">
         <Navbar />
       </div>
       <div className="w-[90%] mx-auto mobile:pt-[20px]">

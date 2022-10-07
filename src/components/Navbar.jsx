@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   
   return (
-    <div>
+    <div className={!nav ? 'relative z-[1]': ' w-[100%] h-[100%] modal fixed z-[4]'}>
         <div className="w-[90%] mx-auto flex justify-between">
           <div>
             <Link to="/">
