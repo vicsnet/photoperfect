@@ -127,7 +127,7 @@ const ImageUpload = () => {
                   />
                 </div>
               </div>
-              <div className=" sm:hidden mt-[20px]">
+              <div className=" sm:hidden mt-[40px]">
                 <button
                   disabled={getData.length < 4}
                   className={
