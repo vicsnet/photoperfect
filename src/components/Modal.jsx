@@ -63,11 +63,8 @@ const Modal = ({ open, onClose, onGetData }) => {
   if (!open) return null;
 
   return (
-    <div className="w-[100%] h-screen modal top-0  fixed z-10">
-      <div
-        className="w-[92%] sm:w-[80%] md:w-[75%] lg:w-[65%] xl:w-[50%] mt-[96px] mx-auto "
-        style={{ maxHeight: "calc(100vh + 110px)" }}
-      >
+    <div className="w-[100%] h-[100%] modal top-0  fixed z-10">
+      <div className="w-[92%] sm:w-[80%] md:w-[75%] lg:w-[65%] xl:w-[50%] mt-[40px] mobile:mt-[30px] smMobile:mt[50px] smDesktop:mt-[8px] tablet:mt-[130px] tabletAir:mt-[140px] smDesk:mt-[50px] mx-auto ">
         <div className="bg-[#F6F4F8] rounded-[16px]">
           <div className="w-[90%] mx-auto">
             <div className=" w-[50%] flex justify-between ml-auto pt-[21px] pb-[30px] md:pt-[31px] md:pb-[41px]">
@@ -95,21 +92,21 @@ const Modal = ({ open, onClose, onGetData }) => {
                     src={frame}
                     alt=""
                     onClick={uploadFile}
-                    className="mobile:w-[200px] mobile:h-[200px] lg:w-[500px] mx-auto"
+                    className="mobile:w-[200px] mobile:h-[200px] w-[300px] lg:w-[500px] mx-auto"
                   />
                 ) : (
                   <div
                     className={
                       !border
-                        ? "mobile:w-[200px] mobile:h-[200px] w-[260px] h-[260px] sm:w-[300px] sm:h-[300px]  lg:w-[350px] lg:h-[350px] mb-[20px] border-[20px]  border-[#18191A] relative flex items-center shadow-xl mx-auto justify-center"
-                        : " mobile:w-[200px] mobile:h-[200px] w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] mb-[20px] border-[20px]  border-[#FFFFFF] relative flex items-center shadow-xl mx-auto justify-center"
+                        ? "mobile:w-[185px] mobile:h-[185px] w-[260px] h-[260px]  sm:w-[300px] sm:h-[300px]  lg:w-[350px] lg:h-[350px] mb-[20px] border-[20px]  border-[#18191A] relative flex items-center shadow-xl mx-auto justify-center"
+                        : " mobile:w-[185px] mobile:h-[185px] w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] mb-[20px] border-[20px]  border-[#FFFFFF] relative flex items-center shadow-xl mx-auto justify-center"
                     }
 
                     //   className=""
                   >
                     <img
                       src={file}
-                      className="w-[100%] h-[100%] sm:w-[260px] sm:h-[260px] lg:h-[310px] lg:w-[310px] object-cover mx-auto my-auto "
+                      className="w-[100%] h-[100%] sm:w-[260px] sm:h-[260px] lg:h-[310px] lg:w-[310px] object-fill mx-auto my-auto "
                     />
                   </div>
                 )}
@@ -187,7 +184,7 @@ const Modal = ({ open, onClose, onGetData }) => {
               </div>
             </div>
 
-            <div className=" pb-[55px] md:pb-[30px]  pt-[40px]  flex justify-center">
+            <div className=" pb-[50px] md:pb-[30px]  pt-[40px]  flex justify-center">
               <button
                 onClick={handleClick}
                 className=" text-[16px] font-bold leading-[19.36px] py-[15.5px] px-[130px] lg:px-[157px] bg-[#A560FE] text-[#FFFFFF] rounded-[6px] "

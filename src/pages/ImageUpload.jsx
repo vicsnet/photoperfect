@@ -88,7 +88,7 @@ const ImageUpload = () => {
                 Uplaod minimum of 4 pictures
               </p>
 
-              <div className="flex gap-4  smDesktop:gap-20 tablet:justify-center smDesk:gap-4 tabletAir:justify-center flex-wrap px-20 mobile:px-3 mobile:gap-1 md:mb-[300px]">
+              <div className="flex gap-[18px]  smDesktop:gap-20 tablet: smDesk:gap-4  flex-wrap px-20 mobile:px-3 mobile:gap-1 tabletAir:gap-20 mobile:justify-center">
                 {getData?.map((detail) => {
                   const { id, whiteBorder, image } = detail;
                   return (
@@ -96,13 +96,13 @@ const ImageUpload = () => {
                       <div
                         className={
                           !whiteBorder
-                            ? "w-[280px] h-[280px] mb-[20px] border-[20px]  border-[#18191A] relative flex items-center shadow-xl"
-                            : "w-[280px] h-[280px] mb-[20px] border-[20px]  border-[#FFFFFF] relative flex items-center shadow-xl"
+                            ? "w-[280px] h-[280px] tablet:w-[180px] tablet:h-[180px] tabletAir:w-[200px] tabletAir:h-[200px] mb-[20px] border-[20px]  border-[#18191A] relative flex items-center shadow-xl"
+                            : " tablet:w-[180px] tablet:h-[180px] tabletAir:w-[200px] tabletAir:h-[200px] w-[280px] h-[280px] mb-[20px] border-[20px]  border-[#FFFFFF] relative flex items-center shadow-xl"
                         }
                       >
                         <img
                           src={image}
-                          className="w-[100%] h-[100%] object-cover relative flex items-center justify-center mx-auto"
+                          className="w-[100%] h-[100%] object-fill relative flex items-center justify-center mx-auto"
                         />
                         <button
                           className=" top-[750px] right-[140px] -[202px]"
@@ -122,12 +122,12 @@ const ImageUpload = () => {
                   <img
                     src={frame}
                     alt=""
-                    className="w-[280px] h-[280px] "
+                    className="w-[280px] h-[280px] tabletAir:w-[200px] tabletAir:h-[200px]"
                     onClick={() => setOpenModal(true)}
                   />
                 </div>
               </div>
-              <div className=" sm:hidden mb-[202px]">
+              <div className=" sm:hidden mt-[20px]">
                 <button
                   disabled={getData.length < 4}
                   className={
