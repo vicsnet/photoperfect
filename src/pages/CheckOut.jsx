@@ -14,32 +14,32 @@ const CheckOut = () => {
   const getDataHandler = (data) => {
     setGetData(data);
   };
-useEffect(() => {
-  if (localStorage.getItem("ImageDetails")) {
-    const storedList = JSON.parse(localStorage.getItem("ImageDetails"));
-    setGetData(storedList);
-  }
-}, []);
-
+  useEffect(() => {
+    if (localStorage.getItem("ImageDetails")) {
+      const storedList = JSON.parse(localStorage.getItem("ImageDetails"));
+      setGetData(storedList);
+    }
+  }, []);
 
   const FormTitles = ["Shipping details", "Payment details"];
 
   const pageDisplay = () => {
     if (page === 0) {
-      return  <Shipping /> 
-     
+      return <Shipping />;
     } else {
-      return <Payment /> 
+      return <Payment />;
     }
-  }
+  };
   return (
     <div className="whitespace-nowrap ">
-      <Navbar />
+      <div className="pb-[30.5px]">
+        <Navbar />
+      </div>
 
       <div className="bg-[#D9D9D9] pb-[25.5px] ">
         <div className="w-[90%] mx-auto relative ">
           <div
-            className="text-[12px] leading-[14.52px] font-light mt-[30.5px] pt-[30px] mb-[25.5px] flex justify-between"
+            className="text-[12px] leading-[14.52px] font-light pt-[30px] mb-[25.5px] flex justify-between"
             style={{ color: "rgba(102, 102, 102, 1)" }}
           >
             <ul className="flex gap-2 pt-[20px]">

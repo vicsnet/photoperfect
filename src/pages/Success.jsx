@@ -7,7 +7,7 @@ import Animate from "../images/93127-success-animation-without-background.gif";
 const Success = () => {
   return (
     <div className="">
-      <div className="pb-[20px]">
+      <div className="pb-[30.5px]">
         <Navbar />
       </div>
 
