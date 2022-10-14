@@ -20,6 +20,7 @@ import larainsta8 from "../images/Rectangle 254.png";
 import larainsta9 from "../images/Rectangle 255.png";
 import insta from "../images/instagram.png";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -72,15 +73,17 @@ const Hero = () => {
               Your walls hold a lot of potentials. Spice things up with magical
               frames today!
             </p>
-            <button
-              className="hidden sm:flex py-[15px] px-[64.5px] rounded-[6px] mt-[63px]"
-              style={{
-                background: "rgba(165, 96, 254, 1)",
-                color: "rgba(255, 255, 255, 1)",
-              }}
-            >
-              Get Started
-            </button>
+            <Link to="/details" onClick={() => window.scrollTo(0, 0)}>
+              <button
+                className="hidden sm:flex py-[15px] px-[64.5px] rounded-[6px] mt-[63px]"
+                style={{
+                  background: "rgba(165, 96, 254, 1)",
+                  color: "rgba(255, 255, 255, 1)",
+                }}
+              >
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <button

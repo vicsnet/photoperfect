@@ -17,10 +17,10 @@ const Navbar = () => {
   return (
     <div
       className={
-        !nav ? "relative z-[1]" : " w-[100%] h-[100%] modal fixed z-[4]"
+        !nav ? "relative z-[1]" : " w-[100%] h-[100%] modal fixed z-[4] "
       }
     >
-      <div className="w-[90%] mx-auto flex justify-between">
+      <div className="w-[90%] mx-auto flex justify-between pb-[30px]">
         <div>
           <Link to="/">
             <img
@@ -52,7 +52,7 @@ const Navbar = () => {
               <div></div>
 
               <div
-                className=" absolute z-30  mt-[0px] flex flex-col w-[100%] sm:w-[351px]  px-[40px] "
+                className=" absolute z-30  mt-[-30px] flex flex-col  sm:w-[351px]  px-[40px] rounded-[5px]"
                 style={{ background: "rgba(255, 255, 255, 1)" }}
               >
                 <div className="flex mx-0 justify-between pt-12 ">
@@ -62,7 +62,7 @@ const Navbar = () => {
                   <img
                     src={NavClose}
                     alt="Nav Icon"
-                    className="w-[16.01px] h-[16.01px] mt-[18px] flex justify-end "
+                    className="w-[16.01px] h-[16.01px] mt-[18px] flex justify-end  "
                     onClick={handlenav}
                   />
                 </div>

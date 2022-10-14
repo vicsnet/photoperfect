@@ -32,7 +32,7 @@ const CheckOut = () => {
   };
   return (
     <div className="whitespace-nowrap ">
-      <div className="pb-[30.5px]">
+      <div className="">
         <Navbar />
       </div>
 

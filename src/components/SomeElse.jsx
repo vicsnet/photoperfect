@@ -11,7 +11,7 @@ const SomeElse = () => {
         <img
           src={bgi}
           alt=""
-          className="absolute w-[190px] lg:w-[400px] mt-[-100px]"
+          className="absolute w-[190px] lg:w-[400px] mt-[-130px]"
         />
       </div>
       <div className="relative w-[90%] mx-auto">

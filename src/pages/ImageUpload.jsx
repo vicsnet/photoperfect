@@ -37,7 +37,7 @@ const ImageUpload = () => {
   };
   return (
     <div className="">
-      <div className="pb-[30.5px]">
+      <div className="">
         <Navbar />
       </div>
 

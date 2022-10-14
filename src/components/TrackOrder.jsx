@@ -20,7 +20,7 @@ const TrackOrder = () => {
         <Navbar />
         <div className="w-[90%] mx-auto relative pb-[100px]">
           <div
-            className="text-[12px] leading-[14.52px] font-light mt-[53.5px] mb-[25.5px]"
+            className="text-[12px] leading-[14.52px] font-light pt-[53.5px] mb-[25.5px]"
             style={{ color: "rgba(102, 102, 102, 1)" }}
           >
             <ul className="flex gap-2">
